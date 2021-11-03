@@ -5,7 +5,7 @@
 // https://matplotlib.org/stable/tutorials/colors/colormaps.html
 //
 // The color maps (using RGB specification) are stored in files named 
-// ColorMap-[name].tsv that should be in the subfolder ColorMaps (relative to
+// [color-map-name].tsv that should be in the subfolder colormaps (relative to
 // the placement of this script).
 // 
 // Currently supporeted names are:
@@ -27,7 +27,7 @@ class ColorMap {
     int colorCount = 256;
     name = mapName;
     colors = new color[colorCount];  
-    Table table = loadTable("ColorMaps/ColorMap-" + name + ".tsv", "header");
+    Table table = loadTable("colormaps/" + name + ".tsv", "header");
     colorMode(RGB, 1);
     for (int i = 0; i < colorCount; i++) {
       TableRow row = table.getRow(i);

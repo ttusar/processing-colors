@@ -27,13 +27,14 @@ will yield
 ![Example](example.png "Example")
 
 In order to be able to use `ColorMap` in your sketchbook, copy the file `ColorMap.pde` and the 
-folder `ColorMaps` from the `ColorMapExample` folder to the folder of your sketchbook. See also the 
+folder `colormaps` from the `ColorMapExample` folder to the folder of your sketchbook. See also the 
 example provided in the `ColorMapExample` folder.
 
 ## Supported color maps
 
-Currently, the class supports the following [matplotlib's](https://matplotlib.org/) 
-[colormaps](https://matplotlib.org/stable/tutorials/colors/colormaps.html):
+Currently, the class supports the following 
+[colormaps](https://matplotlib.org/stable/tutorials/colors/colormaps.html) from 
+[matplotlib](https://matplotlib.org/):
 
 - Sequential perceptually uniform color maps: 
   `viridis`, `plasma`, `inferno`, `magma`, `cividis`

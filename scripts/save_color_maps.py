@@ -16,7 +16,7 @@ def save_color_map(map_name, output_path):
     Gets 256 colors from the color map and saves the [0, 1] RGB values of those colors to the
     corresponding tab-separated file in the output_path.
     """
-    file_name = os.path.join(output_path, f'ColorMap-{map_name}.tsv')
+    file_name = os.path.join(output_path, f'{map_name}.tsv')
     cmap = plt.get_cmap(map_name)
     colors = None
     if isinstance(cmap, LinearSegmentedColormap):
@@ -30,7 +30,7 @@ def save_color_map(map_name, output_path):
 
 
 if __name__ == '__main__':
-    out_folder = os.path.join('..', 'ColorMapExample', 'ColorMaps')
+    out_folder = os.path.join('..', 'ColorMapExample', 'colormaps')
     all_color_maps = sequential_uniform + sequential + diverging
     for color_map in all_color_maps:
         print(f'Working on {color_map}')
